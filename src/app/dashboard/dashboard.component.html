@@ -1,0 +1,13 @@
+<div class="dashboard-container">
+  <mat-card>
+    <h2>Welcome, {{ userEmail }}</h2>
+    <div class="dashboard-actions">
+      <button mat-raised-button color="primary" routerLink="/list">
+        Go to Item List
+      </button>
+      <button mat-stroked-button color="warn" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </mat-card>
+</div>

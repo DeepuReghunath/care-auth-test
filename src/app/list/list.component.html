@@ -1,0 +1,13 @@
+<mat-card>
+  <h2>Item List</h2>
+
+  <ng-container *ngIf="vm$ | async as vm">
+    <mat-progress-spinner *ngIf="vm.loading" mode="indeterminate"></mat-progress-spinner>
+
+    <mat-list *ngIf="!vm.loading && !vm.error">
+      <mat-list-item *ngFor="let item of vm.items">
+        <strong>{{ item.name }}</strong>: {{ item.description }}
+      </mat-list-item>
+    </mat-list>
+  </ng-container>
+</mat-card>

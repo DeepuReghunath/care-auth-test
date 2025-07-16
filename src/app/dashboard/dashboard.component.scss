@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+mat-card {
+  padding: 2rem;
+  width: 500px;
+  text-align: center;
+}
+
+.dashboard-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
